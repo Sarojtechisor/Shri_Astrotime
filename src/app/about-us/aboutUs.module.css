@@ -1,0 +1,68 @@
+.Container{
+    padding-top: 5vw;
+    height: auto;
+    width: 100%;
+}
+
+.ContentHeading,.SectionHeading{
+    font-size: 2.4vw;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #dfd9da;
+    font-weight: 600;
+}
+.SectionHeading{
+    text-align: left;
+    font-weight: 500;
+}
+.subContainer2,.subContainer3,.subContainer4{
+    padding: 1vw 12vw;
+}
+.MainContentParagraph{
+    font-size: 1.1vw;
+    /* padding: 1.5vw 8vw; */
+    text-align: justify;
+}
+.subContainer1{
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    .AboutUsHeading{
+        font-size: 4vw;
+        color: #E51B24;
+        font-weight: 600;
+        margin: auto;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+}
+
+.subContainer3>div, .subContainer4>div{
+    width: 50%;
+}
+.subContainer3, .subContainer4{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.subContainer4{
+    margin: 3vw 0;
+    
+}
+.SectionParagraph{
+    font-size: 1.01vw;
+    text-align: justify;
+    line-height: 1.5vw;
+    padding-right: 1.8vw;
+}
+.SectionImage{
+    margin: auto;
+    margin-top: 1.5vw;
+    width: 32vw;
+    height: 27vw;
+}
+#SectionImage2{
+    margin-top: 3.3vw;
+}

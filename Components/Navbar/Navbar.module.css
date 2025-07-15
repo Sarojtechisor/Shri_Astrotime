@@ -1,0 +1,87 @@
+.NavContainer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(239, 196, 43, 0.868);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6vw 5vw;
+    position: fixed;
+    z-index: 1000;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    /* background: transparent; */
+}
+.NavImageDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NavImage{
+    width: 15vw;
+    height: auto;
+}
+.NavLinks{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: rgb(38, 44, 92);;
+    font-weight: 500;
+    font-size: 1vw;
+    letter-spacing: 0.5px;
+    font-family: "Quicksand", Sans-serif;
+}
+.NavLinks>li{
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+}
+.NavLinks>li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #E51B24;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .NavLinks>li:hover::after {
+    width: 100%;
+  }
+
+  .active{
+    color: #E51B24;
+  }
+
+
+  .NavButton {
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-color: #E51B24;
+    padding: 0.5vw 1.7vw;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 4px;
+}
+
+/* Hover Effect */
+.NavButton:hover {
+    background-color: #d10909;
+}
+
+/* On Click Animation */
+.NavButton:active {
+    transform: scale(0.9);
+    background-color: #a5141b;
+}
+#PopupForm{
+    background-color: rgba(14, 14, 14, 0.591);
+
+}

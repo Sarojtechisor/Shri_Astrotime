@@ -1,0 +1,150 @@
+.HomepageSection1{
+    width: fit-content;
+    height: 40vw;
+
+}
+.WatchImage1{
+    
+    position: absolute;
+    top: 14vw;
+    left: 53%;
+    width: 39.5vw;
+    animation: fade-in 1s linear;
+}
+.TypeWritterDiv{
+    position: absolute;
+    top: 20vw;
+    left: 14.5vw;
+    
+}
+.Sectionimg{
+    width: 20vw;
+}
+.SectionHead{
+    color: rgb(229, 234, 232);
+    font-size: 3.2vw;
+    font-weight:600 ;
+}
+.SectionParagraph{
+    color: rgb(229, 234, 232);
+    font-size: 1vw;
+    line-height: 1.6vw;
+    padding-right: 6.5vw;
+    /* word-wrap: none; */
+    text-align:justify
+}
+.SectionButton {
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-color: #E51B24;
+    padding: 0.6vw 1.7vw;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 4px;
+    display: flex;
+    gap: 0.5vw;
+}
+
+/* Hover Effect */
+.SectionButton:hover {
+    background-color: #d10909;
+}
+
+/* On Click Animation */
+.SectionButton:active {
+    transform: scale(0.9);
+    background-color: #a5141b;
+}
+.HomepageSection2>div, .HomepageSection3>div{
+    min-width: 250px;
+    height: auto;
+    flex: 1;
+    padding: 0 20px;
+   
+}
+.HomepageSection2,.HomepageSection3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vw;
+    
+    /* background-color: antiquewhite; */
+    /* animation: fade-in 1.5s 2s linear; */
+}
+.HomepageSection2:in-range{
+    animation: fade-in 1s linear;
+}
+
+.HomepageSection3{
+    width: 100%;
+    height: auto;
+    /* animation: fade-in 1.5s 4s linear; */
+}
+
+.HomepageSection4{
+    
+    width: 70%;
+    margin: auto;
+    margin-bottom: 9vw;
+    height: 10vw;
+    margin-top: 12vw;
+    /* border: 1px solid #d4d0d0; */
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(234, 233, 233, 0.35) 10px 2px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    .BuyingDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4vw;
+        text-align: center;
+        margin-right: 2vw;
+        .CartIcon{
+            width: 1vw;
+            color: #d4d0d0;
+        }
+    }
+    .CharacterImg{
+        position: absolute;
+        height: 15vw;
+        width: auto;
+        bottom: 0px;
+        left: 10px;
+    }
+    .ContentHead{
+        color: rgb(229, 234, 232);
+        font-size: 1.6vw;
+        font-weight:600 ;
+    }
+    .ContentParagraph{
+        color: rgb(229, 234, 232);
+        font-size: 1vw;
+    }
+}
+
+#PopupForm{
+    background-color: rgba(14, 14, 14, 0.591);
+
+}
+
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

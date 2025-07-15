@@ -1,0 +1,91 @@
+.FooterContainer{
+    margin-bottom: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw;
+    /* background-color: rgba(245, 225, 48, 0.498); */
+    background-color: rgba(239, 196, 43, 0.768);
+    .FooterSubContainer{
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2vw;
+        padding: 3vw 4vw;
+        .FooterImg{
+            width: 17vw;
+        }
+        .FooterParagraph{
+            font-weight: 500;
+            font-size: 0.91vw;
+            text-align: justify;
+            word-spacing: 0.1vw;
+            font-family: "Quicksand", Sans-serif;
+            line-height: 1.5vw;
+            color: rgb(38, 44, 92);
+        }
+        .FooterScocialIcons{
+            display: flex;
+            gap: 2vw;
+        }
+        .FooterScocialIcons i{
+            font-size: 1.5vw;
+            color: rgb(38, 44, 92);;
+        }
+        .FooterScocialIcons i:hover{
+            color: #f1f0eb;
+        }
+    }
+
+}
+.FooterLinksDiv{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.3vw;
+}
+.FooterLinkHead{
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: rgb(38, 44, 92);
+}
+.FooterLinks {
+    font-family: "Quicksand", Sans-serif;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    transition: color 0.3s ease;
+    width: fit-content;
+}
+
+/* Add ::after to the element itself */
+.FooterLinks::after {
+    content: "";
+    position: absolute;
+    left: 1.2vw;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #E51B24;
+    transition: width 0.65s ease-in-out;
+}
+
+/* On hover, animate the border */
+.FooterLinks:hover::after {
+    /* width: 90%; */
+    padding: auto;
+}
+.FooterLinks:hover{
+    color: #E51B24 !important;
+}
+
+.FooterContact{
+    padding-top: 1.3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+/* .FooterContactParagraph{
+    line-height: 5vw;
+} */

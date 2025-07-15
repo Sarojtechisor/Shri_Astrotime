@@ -1,0 +1,47 @@
+.ContactUsSubContainer{
+    padding: 1vw 14vw;
+    padding-bottom: 2vw;
+}
+.ContentHeading{
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: rgba(239, 196, 43, 0.868);
+}
+.ContactUsSection1{
+   
+    margin-top: 5vw;
+    box-shadow: rgba(234, 233, 233, 0.25) 10px 2px 15px;
+    background-color: rgba(0, 0, 0, 0.368);
+
+}
+.ContactUsSubSection1{
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+    padding: 3vw 3vw;
+}
+.ContactUsSubSection1>div{
+    min-width: 300px;
+    flex: 1;
+}
+.SectionImg{
+    width: 30vw;
+    height: auto;
+}
+#FormSubmitBtn{
+    background-color: rgba(239, 196, 43, 0.868);
+}
+#FormSubmitBtn:hover{
+    background-color: rgba(216, 176, 31, 0.868);
+}
+#FormSubmitBtn:active{
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.ContactUsSection2{
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    height: 30vw;
+}

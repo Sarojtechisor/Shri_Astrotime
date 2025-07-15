@@ -1,0 +1,195 @@
+.OurProductContainer{
+    scroll-behavior: smooth;
+}
+.SectionHead{
+    color: rgb(229, 234, 232);
+    font-size: 3.2vw;
+    font-weight:600 ;
+    
+}
+.SectionSubHead{
+    font-weight: 600;
+    font-size: 1.2vw;
+    color: rgba(239, 196, 43, 0.868);
+    padding-left: 0.3vw;
+}
+.ContentParagraph{
+    font-size: 1.1vw;
+    text-align: justify;
+    font-weight: 500;
+    /* color: rgba(239, 196, 43, 0.868); */
+    animation: TextFadein 5s ease-in-out;
+}
+.SectionImg,.SectionSubHead,.SectionHead{
+    animation: fade-in 1.5s linear;
+}
+.OurProductContainer{
+    background: transparent;
+   overflow:auto;
+}
+/* Container for Video Background */
+.OurProductContainer {
+    margin-top: 5vw;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    animation: backgroundFade 5s ease-in-out forwards;
+}
+
+/* Video Styles */
+.VideoBackground video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.35;
+}
+
+/* Content Overlay */
+.VideoBackground .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+.OurProductGridDiv{
+    /* padding-top: 5vw; */
+    background-color: rgba(239, 196, 43, 0.868);
+}
+
+.OurProductSection1, .OurProductSection2{
+    width: 100%;
+    margin-top: 13vw;
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    flex-wrap: wrap;
+    padding-left: 0.7vw;
+}
+.OurProductSection1>div, .OurProductSection2>div{
+    width: 40%;
+    min-width: 300px;
+}
+
+.OurProductSection2{
+    padding: 0%;
+}
+
+.ContentHead{
+    font-size: 1.8vw;
+    font-weight: 700;
+    text-align: start;
+    color: rgba(239, 196, 43, 0.868);
+}
+.ContentSubHead{
+    padding-top: 1vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.ContentListDiv{
+    font-size: 1vw;
+    line-height: 1.9vw;
+    font-weight: 600;
+}
+
+.OurProductSection3{
+    margin-top: 13vw;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    .ProductCardDiv{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+        gap: 4vw;
+        padding:5vw 12vw;
+    }
+    .ProductCard{
+        height: fit-content;
+        border-radius: 10px;
+        box-shadow: rgba(234, 233, 233, 0.35) 10px 2px 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        flex: 1;
+        text-align: center;
+        padding:4vw 1vw ;
+        .ProductImage{
+            text-align: center;
+            margin: auto;
+            width: 13vw;
+            height: 15vw;
+        }
+        .ProductName{
+            margin-top: 3vw;
+            font-size: 1.7vw;
+            color: rgba(239, 196, 43, 0.868);
+        }
+        .ProductPrice{
+            margin-top: 2vw;
+            font-size: 1vw;
+        }
+        .ProductCardBtn{
+            margin-top: 1.5vw;
+            font-size: 1vw;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-align: center;
+            background-color: #E51B24;
+            padding: 0.6vw 1.7vw;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border-radius: 4px;
+        }
+        .ProductCardBtn:hover {
+            background-color: #d10909;
+        }
+        .ProductCardBtn:active {
+            transform: scale(0.9);
+            background-color: #a5141b;
+        }
+    }
+}
+
+#PopupForm{
+    background-color: rgba(14, 14, 14, 0.648);
+    text-align: start;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes TextFadein {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        display: block;
+    }
+}
+
+@keyframes backgroundFade {
+    0% {
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    }
+    100% {
+        background-color: rgba(125, 121, 121, 0.192); /* Light background */
+    }
+}

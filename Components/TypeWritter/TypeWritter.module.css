@@ -1,0 +1,42 @@
+.frontHeadingDiv{
+    display: flex;
+    flex-direction: column;
+    font-size: 2.6vw;
+    color: rgb(225, 220, 220);
+    font-weight: 600;
+    word-spacing: 0.9px;
+    font-family: "Montserrat", Sans-serif;
+    .frontHeadingText{
+        display: flex;
+        gap: 15px;
+    }
+}
+.fixedWord{
+    color: #E51B24;
+}
+
+.SectionButton {
+    width: 10vw;
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-color: #E51B24;
+    padding: 0.7vw 1.7vw;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 4px;
+}
+
+/* Hover Effect */
+.SectionButton:hover {
+    background-color: #d10909;
+}
+
+/* On Click Animation */
+.SectionButton:active {
+    transform: scale(0.9);
+    background-color: #a5141b;
+}
