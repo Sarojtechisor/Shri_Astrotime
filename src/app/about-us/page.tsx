@@ -1,8 +1,10 @@
-import react from "react";
-import styles from "./aboutUs.module.css";
-import Navbar from "../../../Components/Navbar/Navbar";
-import Footer from "../../../Components/Footer/Footer";
-import Animation from "../../../Components/Animations/Galaxy-Animation/Animation";
+'use client';
+import Image from 'next/image';
+import styles from './aboutUs.module.css';
+import Navbar from '../../../Components/Navbar/Navbar';
+import Footer from '../../../Components/Footer/Footer';
+import Animation from '../../../Components/Animations/Galaxy-Animation/Animation';
+
 const Aboutus = () => {
   return (
     <>
@@ -15,7 +17,6 @@ const Aboutus = () => {
 
         <div className={styles.subContainer2}>
           <h1 className={styles.ContentHeading}>Who are we..</h1>
-
           <p className={styles.MainContentParagraph}>
             We, at Shri Astrotime, are a team of people with extensive
             experience in Horology and Electronics System Design, with strong
@@ -29,10 +30,13 @@ const Aboutus = () => {
 
         <div className={styles.subContainer3}>
           <div className={styles.LeftSubContainer}>
-            <img
+            <Image
               className={styles.SectionImage}
               src="/Images/About-Img/vision-astrotime (1).jpg"
-              alt=""
+              alt="Vision Shri Astrotime"
+              width={500}
+              height={350}
+            
             />
           </div>
           <div className={styles.RightSubContainer}>
@@ -62,24 +66,28 @@ const Aboutus = () => {
             </p>
           </div>
         </div>
+
         <div className={styles.subContainer4}>
-        <div className={styles.LeftSubContainer}>
+          <div className={styles.LeftSubContainer}>
             <h1 className={styles.SectionHeading}>Mission:</h1>
             <p className={styles.SectionParagraph}>
-            To design, manufacture, and deliver high-quality Panchanga Clocks that reflect the essence of India’s ancient timekeeping tradition. Through innovation, precision engineering, and unwavering commitment to excellence, we aim to provide our customers worldwide with a unique blend of heritage and technology. Our mission is to inspire a deeper appreciation of Vedic wisdom while maintaining the highest standards of quality, reliability, and customer satisfaction. At Shri Astrotime, we strive to keep the timeless legacy of Panchanga alive in every home.
+              To design, manufacture, and deliver high-quality Panchanga Clocks that reflect the essence of India’s ancient timekeeping tradition. Through innovation, precision engineering, and unwavering commitment to excellence, we aim to provide our customers worldwide with a unique blend of heritage and technology. Our mission is to inspire a deeper appreciation of Vedic wisdom while maintaining the highest standards of quality, reliability, and customer satisfaction. At Shri Astrotime, we strive to keep the timeless legacy of Panchanga alive in every home.
               <br /> <br />
               We are dedicated to reviving the Vedic understanding of time — one that goes beyond hours and minutes to embrace celestial rhythms, lunar phases, and planetary alignments. Every clock we create is a bridge between the cosmic wisdom of the past and the digital world of today.
               <br />
               <br />
-              Our goal is not only to preserve this sacred knowledge but also to make it a meaningful part of everyday life. By bringing Panchanga into homes, schools, and spiritual spaces, we hope to inspire curiosity, cultural pride, and a deeper appreciation of our ancestors’ insights into time and the univer.
+              Our goal is not only to preserve this sacred knowledge but also to make it a meaningful part of everyday life. By bringing Panchanga into homes, schools, and spiritual spaces, we hope to inspire curiosity, cultural pride, and a deeper appreciation of our ancestors’ insights into time and the universe.
             </p>
           </div>
           <div className={styles.RightSubContainer}>
-            <img
-              className={styles.SectionImage} 
+            <Image
+              className={styles.SectionImage}
               id={styles.SectionImage2}
               src="/Images/About-Img/vision (1).jpg"
-              alt=""
+              alt="Mission Shri Astrotime"
+              width={400}
+              height={350}
+             
             />
           </div>
         </div>

@@ -40,6 +40,7 @@
 
 .subContainer3>div, .subContainer4>div{
     width: 50%;
+    gap: 10vw;
 }
 .subContainer3, .subContainer4{
     width: 100%;
@@ -60,7 +61,7 @@
 .SectionImage{
     margin: auto;
     margin-top: 1.5vw;
-    width: 32vw;
+    width: 30vw;
     height: 27vw;
 }
 #SectionImage2{
